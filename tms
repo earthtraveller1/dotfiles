@@ -1,6 +1,6 @@
 #!/bin/bash
 
-directory=$(find ~/projects/code -maxdepth 2 -type d | fzf | tr . _)
+directory=$(find ~/projects/code ~/.config -maxdepth 2 -type d | fzf | tr . _)
 
 if pgrep tmux
 then
