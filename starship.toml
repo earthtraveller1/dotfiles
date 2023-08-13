@@ -1,0 +1,4 @@
+format = '$all'
+
+[directory]
+truncation_length = 50
