@@ -51,8 +51,13 @@ exec --no-startup-id picom
 # you know, work!!!
 exec --no-startup-id dunst
 
+# Disable automatic standby, as it's annoying and turns off screen when I'm 
+# watching videos.
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s off
+
 # Now, we start the real Discord, so that Discord would actually start
-exec --no-startup-id discord --start-minimized
+# exec --no-startup-id discord --start-minimized
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
