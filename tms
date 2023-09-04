@@ -1,28 +1,19 @@
 #!/bin/bash
 
-directory=$(find ~/projects/code ~/.config -maxdepth 2 -type d | fzf)
-name=$(echo "$directory" | tr . _)
+directory="$(find ~/projects/code ~/.config -maxdepth 2 -type d | fzf)"
+name="$(echo "$directory" | tr '.' '_')"
 
-if pgrep tmux
+pgrep tmux
+if [[ $? != 0 ]]
 then
-    if tmux has-session -t $name
-    then
-        if [ -v TMUX ]
-        then
-            tmux switch-client -t "$name"
-        else
-            tmux a -t "$name"
-        fi
-    else
-        tmux new -dc "$directory" -s "$name"
-        if [ -v TMUX ]
-        then
-            tmux switch-client -t "$name"
-        else
-            tmux a
-        fi
-    fi
-else
-    tmux new -dc "$directory" -s "$name"
-    tmux a
+    tmux start-server
 fi
+
+tmux has-session -t "=$name"
+if [[ $? != 0 ]]
+then
+    tmux new -dc "$directory" -s "$name"
+fi
+
+tmux a -t "=$name"
+
