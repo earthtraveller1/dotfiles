@@ -12,8 +12,12 @@ fi
 tmux has-session -t "=$name"
 if [[ $? != 0 ]]
 then
-    tmux new -dc "$directory" -s "$name"
+    tmux new-session -dc "$directory" -s "$name"
 fi
 
-tmux a -t "=$name"
-
+if [ -z "${TMUX+x}" ]
+then
+    tmux attach-session -t "=$name"
+else
+    tmux switch-client -t "=$name"
+fi
