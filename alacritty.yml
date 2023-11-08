@@ -1,0 +1,10 @@
+window:
+  opacity: 0.6
+font:
+  normal:
+    family: Hack Nerd Font Mono
+  size: 14
+colors:
+  primary:
+    background: '#121212'
+    foreground: '#cacaca'
