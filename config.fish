@@ -5,6 +5,9 @@ end
 # Use the ayu Dark theme
 fish_config theme choose "ayu Dark"
 
+# Use Vi keybindings
+fish_vi_key_bindings
+
 # Disable the fish greeting
 set fish_greeting
 
@@ -20,7 +23,9 @@ fish_add_path "/home/yue/programs/emsdk/upstream/emscripten"
 alias tmuxnew='tmux new -s (pwd)'
 alias cdf='cd (find -type d | fzf)'
 
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/yue/.ghcup/bin $PATH # ghcup-env
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
 
-# opam configuration
-source /home/yue/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+# obsidian
+set --export OBSIDIAN_VAULT_PATH "$HOME/Documents/obsidian-vault"
