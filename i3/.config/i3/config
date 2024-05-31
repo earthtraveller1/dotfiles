@@ -10,7 +10,6 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-set $lockscreen /mnt/3TDisk/Yue/Pictures/Wallpapers/unliving-illusions-2-monitors.png
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -186,7 +185,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # Locks the screen.
-bindsym $mod+x exec "i3lock -i $lockscreen"
+bindsym $mod+x exec "lockscreen"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
