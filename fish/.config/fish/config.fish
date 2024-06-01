@@ -25,3 +25,6 @@ alias cdf='cd (find -type d | fzf)'
 
 # obsidian
 set --export OBSIDIAN_VAULT_PATH "$HOME/Documents/obsidian-vault"
+
+# clear the screen
+clear
