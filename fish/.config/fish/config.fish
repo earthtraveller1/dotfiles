@@ -11,7 +11,7 @@ fish_vi_key_bindings
 # Disable the fish greeting
 set fish_greeting
 
-# starship init fish | source
+starship init fish | source
 fish_add_path "/home/yue/.local/bin"
 fish_add_path "/home/yue/.cargo/bin"
 
