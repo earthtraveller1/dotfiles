@@ -247,6 +247,6 @@ client.background       #F8F8F2
 #     status_command i3status
 # }
 
-exec_always --no-startup-id polybar
+exec_always --no-startup-id polybar --config=$HOME/.config/polybar/config.ini example
 
 exec_always --no-startup-id "~/.fehbg"
