@@ -30,3 +30,5 @@ set --export OBSIDIAN_VAULT_PATH "$HOME/Documents/obsidian-vault"
 
 # clear the screen
 clear
+
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/yue/.ghcup/bin $PATH # ghcup-env
