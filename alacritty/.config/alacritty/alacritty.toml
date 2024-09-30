@@ -3,7 +3,7 @@ background = "#121212"
 foreground = "#cacaca"
 
 [font]
-size = 14
+size = 12
 
 [font.normal]
 family = "Hack Nerd Font Mono"
