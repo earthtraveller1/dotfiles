@@ -126,6 +126,9 @@ bindsym $mod+g split h
 # split in vertical orientation
 bindsym $mod+v split v
 
+# hide and show polybar
+bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -221,6 +224,7 @@ bindsym $mod+r mode "resize"
 
 gaps horizontal 20px
 gaps bottom 20px
+gaps top 10px
 
 # class                 border  bground text    indicator child_border
 client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
