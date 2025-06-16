@@ -9,4 +9,4 @@ size = 12
 family = "Hack Nerd Font Mono"
 
 [window]
-opacity = 1.0
+opacity = 0.75
