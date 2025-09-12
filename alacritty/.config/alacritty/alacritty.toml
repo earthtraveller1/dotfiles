@@ -10,6 +10,3 @@ size = 12
 
 [font.normal]
 family = "Hack Nerd Font Mono"
-
-[window]
-opacity = 0.85
