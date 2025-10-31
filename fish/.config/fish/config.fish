@@ -23,6 +23,10 @@ ssh-agent -c | source
 alias tmuxnew='tmux new -s (pwd)'
 alias cdf='cd (find -type d | fzf)'
 
+# Some power setting stuff
+alias savepower="sudo x86_energy_perf_policy power"
+alias highperf="sudo x86_energy_perf_policy performance"
+
 # obsidian
 set --export OBSIDIAN_VAULT_PATH "$HOME/Documents/obsidian-vault"
 
