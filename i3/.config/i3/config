@@ -19,7 +19,7 @@ font pango:Hack Nerd Font 10
 # gaps outer 24px
 
 title_align center
-default_border pixel 5
+default_border pixel 4
 
 # Start PolyBar, the thing that makes the status bar
 # exec_always --no-startup-id polybar --config=$HOME/.config/polybar/config.ini example
@@ -226,9 +226,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps horizontal 20px
-gaps bottom 20px
-gaps top 10px
+# gaps horizontal 20px
+# gaps bottom 20px
+# gaps top 10px
 
 # class                 border  bground text    indicator child_border
 client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
