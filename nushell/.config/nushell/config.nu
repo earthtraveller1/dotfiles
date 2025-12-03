@@ -25,11 +25,11 @@ $env.config.show_banner = false
 
 $env.PATH ++= ["~/.local/bin"]
 
-def project_names [] {
+def names_projects [] {
     ls --short-names $"($env.HOME)/projects" | get name
 }
 
-def projects [name: string@project_names] {
+def projects [name: string@names_projects] {
     cd $"($env.HOME)/projects/($name)"
     zellij attach --create $name
 }
@@ -41,4 +41,13 @@ def windocs_names [] {
 def windocs [name: string@windocs_names] {
     cd $"($env.HOME)/windowshome/OneDrive/Documents/($name)"
     zellij attach --create $name
+}
+
+def update_discord [] {
+    cd $"($env.HOME)/Downloads"
+    wget "https://discord.com/api/download?platform=linux&format=tar.gz" -O discord.tar.gz
+    tar -xvf discord.tar.gz
+    rm -rf ~/.discord
+    mv Discord ~/.discord
+    rm discord.tar.gz
 }
