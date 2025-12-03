@@ -1,0 +1,35 @@
+* {
+    font-family: "Hack Nerd Font Mono";
+    font-size: 12px;
+}
+
+#waybar {
+    color: rgb(255, 220, 32);
+    background-color: rgb(16, 16, 32);
+}
+
+#workspaces {
+    color: rgb(8, 8, 255);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#workspaces button.active label,
+#workspaces button.focused label {
+    background-color: rgb(32, 32, 64);
+    border-radius: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+}
+
+#clock {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#battery {
+    margin-left: 20px;
+}
