@@ -1,0 +1,38 @@
+window {
+    background-color: rgb(8, 16, 8);
+    color: rgb(64, 255, 64);
+    font-family: "Hack Nerd Font Mono";
+}
+
+#input {
+    background-color: rgb(10, 20, 10);
+    color: rgb(80, 200, 255);
+    box-shadow: none;
+    border-style: none;
+    padding: 5px;
+}
+
+#input:selected {
+    box-shadow: none;
+}
+
+#entry {
+    padding: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-bottom: 4px;
+    border-style: solid;
+    border-color: rgb(32, 32, 32);
+}
+
+#entry:selected {
+    border-style: solid;
+    border-color: rgb(200, 255, 64);
+    border-top: 4px;
+    border-left: 4px;
+    border-right: 4px;
+    border-radius: 8px;
+    background-color: transparent;
+}
