@@ -8,7 +8,7 @@
     "modules-right": [
         "wireplumber",
         "battery",
-        "clock#time",
+        "clock",
     ],
 	"hyprland/workspaces": {
 		// "active-only":
@@ -55,6 +55,10 @@
 		"format-icons": [
 			"󰂎", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
 		],
+    },
+    "clock": {
+        "format": "{:%H:%M:%S}",
+        "interval": 1
     },
     "wireplumber": {
         "format": "{icon} {volume}%",
