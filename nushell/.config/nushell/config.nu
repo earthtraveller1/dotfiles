@@ -25,6 +25,12 @@ $env.config.show_banner = false
 
 $env.PATH ++= ["~/.local/bin"]
 
+module python_venv {
+    export-env {
+        $env.PATH = ($env.PATH | prepend $"($env.PWD)/.venv/bin")
+    }
+}
+
 def names_projects [] {
     ls --short-names $"($env.HOME)/projects" | get name
 }
@@ -51,3 +57,4 @@ def update_discord [] {
     mv Discord ~/.discord
     rm discord.tar.gz
 }
+
