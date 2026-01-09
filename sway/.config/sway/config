@@ -226,6 +226,8 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym Print exec grim
 
+    bindsym $mod+Print exec bash $HOME/.local/bin/screenshot
+
 #
 # Status Bar:
 #
