@@ -1,0 +1,72 @@
+{
+    "modules-left": [
+        "sway/workspaces",
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "wireplumber",
+        "battery",
+        "clock",
+    ],
+	"hyprland/workspaces": {
+		// "active-only":
+		// "hide-active":
+		// "all-outputs":
+		"format": "{icon}",
+		"format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+		},
+		"persistent-workspaces": {
+			"*": 3
+		},
+		// "persistent-only":
+		// "show-special":
+		// "special-visible-only":
+		// "sort-by":
+		// "window-rewrite":
+		// "window-rewrite-default":
+		// "format-window-separator":
+		"workspace-taskbar": {
+			// "enable":
+			// "update-active-window":
+			// "format":
+			// "icon-size":
+			// "icon-theme":
+			// "orientation":
+			// "ignore-list":
+			// "on-click-window":
+		},
+		// "move-to-monitor":
+		// "ignore-workspaces":
+		"on-scroll-up": "hyprctl dispatch workspace +1",
+		"on-scroll-down": "hyprctl dispatch workspace -1",
+		// "expand":
+		"cursor": true
+	},
+    "battery": {
+        "format": "{icon} {capacity}%",
+		"format-time": "{H} hr {M} min",
+		"format-icons": [
+			"󰂎", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
+		],
+    },
+    "clock": {
+        "format": "{:%H:%M:%S}",
+        "interval": 1
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+		"format-muted": "󰝟 {volume}%",
+		// "format-source":
+		// "format-source-muted":
+		"format-icons": [
+			"󰕿", "󰖀", "󰕾"
+		],
+    }
+}

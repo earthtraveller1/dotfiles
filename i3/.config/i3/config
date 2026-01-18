@@ -19,7 +19,7 @@ font pango:Hack Nerd Font 11
 # gaps outer 24px
 
 title_align center
-default_border pixel 5
+default_border pixel 4
 
 # Start PolyBar, the thing that makes the status bar
 # exec_always --no-startup-id polybar --config=$HOME/.config/polybar/config.ini example
@@ -67,8 +67,12 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use xbacklight to adjust screen brightness.
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+#bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+#bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+
+# Use blight instead, which works better
+bindsym XF86MonBrightnessUp exec --no-startup-id blight set +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id blight set -10%
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -124,6 +128,9 @@ bindsym $mod+g split h
 
 # split in vertical orientation
 bindsym $mod+v split v
+
+# hide and show polybar
+bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -218,8 +225,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps horizontal 20px
-gaps bottom 20px
+# gaps horizontal 20px
+# gaps bottom 20px
+# gaps top 10px
 
 # class                 border  bground text    indicator child_border
 client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4

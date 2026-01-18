@@ -1,0 +1,13 @@
+window {
+    background-color: rgb(8, 16, 8);
+    color: rgb(64, 255, 64);
+    font-family: "Hack Nerd Font Mono";
+}
+
+#input {
+    background-color: rgb(10, 20, 10);
+    color: rgb(80, 200, 255);
+    box-shadow: none;
+    border-style: none;
+    padding: 5px;
+}

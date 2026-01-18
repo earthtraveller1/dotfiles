@@ -1,0 +1,63 @@
+* {
+    font-family: "0xProto Nerd Font Mono";
+    font-size: 12px;
+}
+
+#waybar {
+    color: rgb(255, 220, 32);
+    background-color: rgb(16, 16, 32);
+}
+
+#workspaces {
+    color: rgb(8, 8, 255);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#workspaces button {
+    background: transparent;
+    border-width: 0;
+    border-radius: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#workspaces button:hover {
+    border-width: 0;
+    background-color: rgb(24, 24, 48);
+}
+
+#workspaces button.active, #workspaces button.focused {
+    background-color: rgb(32, 32, 64);
+    color: rgb(4, 200, 255);
+}
+
+#clock {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+
+#clock:hover, #wireplumber:hover {
+    background-color: rgb(24, 24, 48);
+}
+
+#battery {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#battery.charging {
+    color: rgb(100, 255, 150);
+}
+
+#wireplumber {
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
