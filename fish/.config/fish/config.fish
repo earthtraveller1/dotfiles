@@ -15,6 +15,8 @@ starship init fish | source
 fish_add_path "/home/yue/.local/bin"
 fish_add_path "/home/yue/.cargo/bin"
 
+set -e SSH_ASKPASS
+
 # Ensure that ssh-agent is running
 ssh-agent -c | source
 
