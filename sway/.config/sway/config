@@ -25,7 +25,7 @@ exec --no-startup-id dunst
 output eDP-1 resolution 2880x1800 position 0 0 scale 1.5 adaptive_sync on
 
 title_align center
-default_border pixel 4
+default_border pixel 1
 
 ### Output configuration
 #
