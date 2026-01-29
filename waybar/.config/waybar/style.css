@@ -19,7 +19,6 @@
 #workspaces button {
     background: transparent;
     border-width: 0;
-    border-radius: 16px;
     padding-left: 8px;
     padding-right: 8px;
     margin: 0;
@@ -40,7 +39,6 @@
 #clock {
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 8px;
 }
 
 #clock:hover, #wireplumber:hover {
@@ -57,7 +55,6 @@
 }
 
 #wireplumber {
-    border-radius: 8px;
     padding-left: 20px;
     padding-right: 20px;
 }
