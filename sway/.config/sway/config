@@ -22,7 +22,7 @@ set $menu wofi --show drun
 
 exec --no-startup-id dunst
 
-output eDP-1 resolution 2880x1800 position 0 0 scale 2 adaptive_sync on
+output eDP-1 resolution 2880x1800 position 0 0 scale 1.75 adaptive_sync on
 
 title_align center
 default_border none
