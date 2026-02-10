@@ -1,6 +1,6 @@
 {
     "modules-left": [
-        "sway/workspaces",
+        "sway/workspaces"
     ],
     "modules-center": [
         "sway/window"
@@ -8,7 +8,7 @@
     "modules-right": [
         "wireplumber",
         "battery",
-        "clock",
+        "clock"
     ],
 	"hyprland/workspaces": {
 		// "active-only":
@@ -20,7 +20,7 @@
             "2": "2",
             "3": "3",
             "4": "4",
-            "5": "5",
+            "5": "5"
 		},
 		"persistent-workspaces": {
 			"*": 3
@@ -54,10 +54,10 @@
 		"format-time": "{H} hr {M} min",
 		"format-icons": [
 			"󰂎", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
-		],
+		]
     },
     "clock": {
-        "format": "{:%H:%M:%S}",
+        "format": "{:%B %d, %Y, %H:%M:%S}",
         "interval": 1
     },
     "wireplumber": {
@@ -67,6 +67,6 @@
 		// "format-source-muted":
 		"format-icons": [
 			"󰕿", "󰖀", "󰕾"
-		],
+		]
     }
 }
