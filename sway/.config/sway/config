@@ -69,7 +69,8 @@ input type:touchpad {
     natural_scroll enabled
     middle_emulation enabled
     scroll_factor 0.25
-    accel_profile flat
+    accel_profile adaptive
+    pointer_accel -0.15
 }
 
 input type:pointer {
