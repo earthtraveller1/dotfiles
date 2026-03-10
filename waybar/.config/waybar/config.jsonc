@@ -68,5 +68,8 @@
 		"format-icons": [
 			"󰕿", "󰖀", "󰕾"
 		]
+    },
+    "sway/workspaces": {
+        "format": ""
     }
 }

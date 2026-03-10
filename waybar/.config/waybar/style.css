@@ -1,55 +1,60 @@
+@import "mocha.css";
+
 * {
     font-family: "0xProto Nerd Font Mono";
     font-size: 12px;
 }
 
 #waybar {
-    color: rgb(255, 220, 32);
-    background-color: rgb(16, 16, 32);
+    color: @text;
+    background-color: @base;
 }
 
 #workspaces {
-    color: rgb(8, 8, 255);
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-left: 1.5em;
+    background-color: @surface0;
+    border-radius: 1em;
+    margin-left: 2em;
+}
+
+#window {
+    color: @mauve;
 }
 
 #workspaces button {
-    background: transparent;
     border-width: 0;
-    border-radius: 0;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin: 0;
     text-shadow: none;
     box-shadow: none;
+    margin: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
 
 #workspaces button:hover {
     border-width: 0;
-    background-color: rgb(24, 24, 48);
+    color: @teal;
 }
 
 #workspaces button.active, #workspaces button.focused {
-    background-color: rgb(32, 32, 64);
-    color: rgb(4, 200, 255);
+    color: @sapphire;
 }
 
 #clock {
     padding-left: 20px;
     padding-right: 20px;
+    color: @rosewater;
 }
 
 #clock:hover, #wireplumber:hover {
-    background-color: rgb(24, 24, 48);
+    background-color: @crust;
+    color: @teal;
 }
 
 #battery {
     padding-left: 20px;
     padding-right: 20px;
+    color: @green;
 }
 
 #battery.charging {
