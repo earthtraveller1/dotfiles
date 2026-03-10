@@ -27,10 +27,13 @@ output eDP-1 resolution 2880x1800 position 0 0 scale 1.5 adaptive_sync on
 title_align center
 default_border none
 
+gaps outer 10
+gaps inner 10
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg #1e1e2e solid_color
 #
 # Example configuration:
 #
