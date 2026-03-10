@@ -71,8 +71,5 @@
     },
     "sway/workspaces": {
         "format": "",
-        "persistent-workspaces": {
-            "*": 5
-        }
     }
 }
