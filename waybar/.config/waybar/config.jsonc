@@ -6,6 +6,7 @@
         "sway/window"
     ],
     "modules-right": [
+        "network",
         "wireplumber",
         "battery",
         "clock"
@@ -69,4 +70,8 @@
 			"󰕿", "󰖀", "󰕾"
 		]
     },
+    "network" :{
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-disconnected": ":c"
+    }
 }
