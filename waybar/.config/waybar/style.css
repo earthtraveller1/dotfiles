@@ -87,3 +87,9 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+#backlight {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: @flamingo;
+}

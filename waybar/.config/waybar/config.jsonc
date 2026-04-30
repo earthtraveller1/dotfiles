@@ -8,6 +8,7 @@
     "modules-right": [
         "network",
         "wireplumber",
+        "backlight",
         "battery",
         "clock"
     ],
@@ -68,10 +69,19 @@
 		// "format-source-muted":
 		"format-icons": [
 			"󰕿", "󰖀", "󰕾"
-		]
+		],
+        "reverse-scrolling": true,
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05%-"
     },
     "network" :{
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-disconnected": "No Internet :c"
+    },
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""],
+        "reverse-scrolling": true,
+        "scroll-step": 0.05
     }
 }
