@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-font pango:0xProto Nerd Font Mono 10
+font pango:0xProto Nerd Font Mono 1
 
 ### Variables
 #
@@ -19,16 +19,16 @@ set $right l
 set $term foot
 # Your preferred application launcher
 set $menu wofi --show drun
+# Your preferred browser
+set $browser firefox
 
 exec --no-startup-id dunst
 
 output eDP-1 resolution 2880x1800 position 0 0 scale 1.5 adaptive_sync on
 
 title_align center
-default_border none
-
-gaps outer 10
-gaps inner 10
+default_border pixel 1
+hide_edge_borders --i3 both
 
 ### Output configuration
 #
@@ -85,6 +85,9 @@ input type:pointer {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+
+    # Start a browser
+    bindsym $mod+Shift+Return exec $browser
 
     # Kill focused window
     bindsym $mod+Shift+q kill
