@@ -25,6 +25,7 @@ set $menu wofi --show drun
 set $browser firefox
 
 exec --no-startup-id dunst
+exec --no-startup-id gammastep -l 42:-83
 
 output eDP-1 resolution 2880x1800 position 0 0 scale 1.5 adaptive_sync on
 
