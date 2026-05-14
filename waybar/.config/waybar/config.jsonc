@@ -84,5 +84,9 @@
         "format-icons": ["", ""],
         "reverse-scrolling": true,
         "scroll-step": 0.05
+    },
+    "sway/window": {
+        "max-length": 32,
+        "icon": true
     }
 }
