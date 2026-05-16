@@ -1,4 +1,5 @@
 {
+    "position": "bottom",
     "modules-left": [
         "sway/workspaces"
     ],
