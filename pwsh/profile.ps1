@@ -12,6 +12,7 @@ function prompt {
   return $out
 }
 
+# A small wrapper for neovim
 function nvim {
     $old_title = $Host.UI.RawUI.WindowTitle
     $Host.UI.RawUI.WindowTitle = "Neovim"
