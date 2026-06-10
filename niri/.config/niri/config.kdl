@@ -7,7 +7,7 @@ spawn-at-startup "dunst"
 spawn-sh-at-startup "gammastep -l 42:-83"
 
 environment {
-    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_QPA_PLATFORMTHEME "kde"
 }
 
 // Input device configuration.
