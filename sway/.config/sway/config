@@ -71,7 +71,7 @@ output * bg #1e1e2e solid_color
 
 input type:touchpad {
     dwt enabled
-    tap enabled
+    tap disabled
     natural_scroll enabled
     middle_emulation enabled
     click_method clickfinger
