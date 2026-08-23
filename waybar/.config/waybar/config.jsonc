@@ -2,7 +2,6 @@
     "position": "bottom",
     "modules-left": [
         "sway/workspaces",
-        "niri/workspaces"
     ],
     "modules-center": [
         "sway/window"
