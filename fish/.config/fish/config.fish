@@ -3,7 +3,7 @@ if status is-interactive
 end
 
 # Use the ayu Dark theme
-fish_config theme choose "ayu Dark"
+fish_config theme choose "catppuccin-mocha"
 
 # Use Vi keybindings
 fish_vi_key_bindings
