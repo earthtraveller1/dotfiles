@@ -7,7 +7,7 @@
 
 #waybar {
     color: @text;
-    background-color: @base;
+    background-color: @crust;
 }
 
 #network {
@@ -21,7 +21,7 @@
 }
 
 #workspaces {
-    background-color: @surface0;
+    background-color: @base;
     border-radius: 1em;
     margin-left: 2em;
     margin-top: 0.25em;
@@ -58,7 +58,7 @@
 
 #workspaces button.active, #workspaces button.focused {
     color: @sapphire;
-    background-color: @lavender;
+    background-color: @mauve;
     color: @crust;
 }
 

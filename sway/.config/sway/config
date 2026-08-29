@@ -36,7 +36,7 @@ hide_edge_borders --i3 both
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg #1e1e2e solid_color
+output * bg $mantle solid_color
 #
 # Example configuration:
 #
