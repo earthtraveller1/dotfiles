@@ -23,7 +23,7 @@
 #workspaces {
     background-color: @base;
     border-radius: 1em;
-    margin-left: 2em;
+    margin-left: 1.5em;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     padding-left: 0.5em;
@@ -92,4 +92,19 @@
     padding-left: 20px;
     padding-right: 20px;
     color: @flamingo;
+}
+
+#custom-voxtype {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    border-radius: 100px;
+}
+
+#custom-voxtype.recording {
+    color: @base;
+    background-color: @teal;
 }

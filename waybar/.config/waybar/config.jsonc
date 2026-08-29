@@ -1,7 +1,8 @@
 {
     "position": "bottom",
     "modules-left": [
-        "sway/workspaces",
+        "custom/voxtype",
+        "sway/workspaces"
     ],
     "modules-center": [
         "sway/window"
@@ -75,6 +76,19 @@
         "reverse-scrolling": true,
         "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05%-"
+    },
+    "custom/voxtype": {
+        "exec": "voxtype status --follow --format json",
+        "return-type": "json",
+        "format": "{icon}",
+        "format-icons": {
+            "idle": "󰍮",
+            "recording": "󰍬",
+            "transcribing": "󰍯",
+            "stopped": ":D"
+        },
+        "on-click": "voxtype record toggle",
+        "tooltip": true
     },
     "network" :{
         "format-wifi": "{essid} ({signalStrength}%) ",
