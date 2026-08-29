@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# Use the ayu Dark theme
+# Use the catpuccin mocha theme
 fish_config theme choose "catppuccin-mocha"
 
 # Use Vi keybindings
@@ -11,8 +11,8 @@ fish_vi_key_bindings
 # Disable the fish greeting
 set -U fish_greeting
 
-fish_add_path "/home/yue/.local/bin"
-fish_add_path "/home/yue/.cargo/bin"
+fish_add_path "$HOME/.local/bin"
+fish_add_path "$HOME/.cargo/bin"
 
 # Tmux sessionizer.
 # alias tms='tmux a -t (tmux ls | cut -d \':\' -f 1 | fzf)'
