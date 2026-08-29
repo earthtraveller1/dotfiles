@@ -25,3 +25,6 @@ alias highperf="sudo x86_energy_perf_policy performance"
 
 # obsidian
 set --export OBSIDIAN_VAULT_PATH "$HOME/Documents/obsidian-vault"
+
+# opencode
+fish_add_path $HOME/.opencode/bin
