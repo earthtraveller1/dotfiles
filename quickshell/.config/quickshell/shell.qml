@@ -68,26 +68,16 @@ PanelWindow {
 
         anchors {
             verticalCenter: parent.verticalCenter
+            right: parent.right
+            rightMargin: 40
         }
-
-        x: parent.width - width - 25
 
         color: "#cdd6f4"
+        text: Qt.formatDateTime(systemClock.date, "hh:mm ap")
 
-        Process { 
-            id: dateProc
-            command: ["date", "+%H:%M %p"]
-            running: true
-            stdout: StdioCollector {
-                onStreamFinished: clock.text = this.text
-            }
-        }
-
-        Timer {
-            interval: 30000
-            running: true
-            repeat: true
-            onTriggered: dateProc.running = true 
+        SystemClock {
+            id: systemClock
+            precision: SystemClock.Minutes
         }
     }
 }
