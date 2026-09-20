@@ -235,16 +235,20 @@ hl.config({
         follow_mouse = 1,
 
         sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
-	accel_profile = "flat",
 
         touchpad = {
             natural_scroll = true,
-	    clickfinger_behavior = true,
-	    tap_to_click = false,
-	    scroll_factor = 0.2,
+            clickfinger_behavior = true,
+            tap_to_click = false,
+            scroll_factor = 0.2,
         },
 
     },
+})
+
+hl.device({
+    name = "logitech-usb-receiver-mouse",
+    accel_profile = "flat",
 })
 
 hl.gesture({
