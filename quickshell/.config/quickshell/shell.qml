@@ -72,7 +72,7 @@ PanelWindow {
 
         x: parent.width - width - 25
 
-        color: "#b4befe"
+        color: "#cdd6f4"
 
         Process { 
             id: dateProc
