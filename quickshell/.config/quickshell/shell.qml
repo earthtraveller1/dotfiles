@@ -12,7 +12,7 @@ PanelWindow {
     }
 
     implicitHeight: 30
-    color: "#1e1e2e"
+    color: "#be1e1e2e"
 
     RowLayout {
         id: workspaces
@@ -49,13 +49,13 @@ PanelWindow {
     }
 
     Battery {
-        width: 60
-        height: 20
+        width: 50
+        height: 15
 
         anchors {
             verticalCenter: parent.verticalCenter
             right: clock.left
-            rightMargin: 20
+            rightMargin: 40
         }
     }
 
