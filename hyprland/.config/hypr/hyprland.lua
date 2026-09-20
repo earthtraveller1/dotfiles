@@ -51,11 +51,15 @@ local menu        = "hyprlauncher"
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 -- Or execute your favorite apps at launch like this:
 --
--- hl.on("hyprland.start", function () 
+hl.on("hyprland.start", function () 
+    hl.exec_cmd("dunst")
+    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("wl-paste --type text --watch cliphist store")
+    hl.exec_cmd("wl-paste --type image --watch cliphist store")
 --   hl.exec_cmd(terminal)
 --   hl.exec_cmd("nm-applet")
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
--- end)
+end)
 
 
 -------------------------------
@@ -66,7 +70,7 @@ local menu        = "hyprlauncher"
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
-
+hl.env("HYPRCURSOR_THEME", "Nordzy-catppuccin-mocha-rosewater")
 
 -----------------------
 ----- PERMISSIONS -----
