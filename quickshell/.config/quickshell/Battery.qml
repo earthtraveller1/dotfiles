@@ -20,6 +20,7 @@ Item {
             anchors.fill: parent
             color: "#585b70"
             radius: 5
+
         } 
 
         function getBattery(): UPowerDevice {
@@ -36,6 +37,19 @@ Item {
             height: parent.height
             anchors.left: parent.left
             color: "#a6e3a1"
+        }
+
+        Text {
+            color: "#11111b"
+            font {
+                family: "0xProto Nerd Font"
+                bold: true
+                pointSize: 9
+            }
+
+            anchors.centerIn: parent
+
+            text: 100 * parent.getBattery().percentage
         }
 
         layer.enabled: true
