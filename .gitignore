@@ -1,2 +1,5 @@
 fish/.config/fish/fish_variables
 nushell/.config/nushell/history.txt
+
+# Local configuration for hyprland
+hyprland/.config/hypr/local.lua

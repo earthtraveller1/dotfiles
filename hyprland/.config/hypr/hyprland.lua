@@ -18,6 +18,7 @@
 --
 
 local catppuccin_mocha = require("catppuccin-mocha")
+local local_settings = require("local")
 
 ------------------
 ---- MONITORS ----
@@ -28,7 +29,7 @@ hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
-    scale    = "1.5",
+    scale    = local_settings.scale,
 })
 
 
