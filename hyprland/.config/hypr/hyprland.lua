@@ -56,6 +56,9 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("hyprpaper")
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
     hl.exec_cmd("wl-paste --type image --watch cliphist store")
+
+    -- Sets the cursor to what I think is good
+    hl.exec_cmd("hyprctl setcursor Nordzy-catppuccin-mocha-rosewater 24")
 --   hl.exec_cmd(terminal)
 --   hl.exec_cmd("nm-applet")
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
@@ -70,7 +73,6 @@ end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_THEME", "Nordzy-catppuccin-mocha-rosewater")
 
 -----------------------
 ----- PERMISSIONS -----
