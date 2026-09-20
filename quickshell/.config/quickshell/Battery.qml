@@ -6,7 +6,7 @@ Item {
     Rectangle {
         id: batteryMask
         anchors.fill: parent
-        radius: 5
+        radius: width / 2
         visible: false
     }
 
