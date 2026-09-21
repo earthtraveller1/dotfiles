@@ -8,7 +8,7 @@ Text {
         pointSize: 9
     }
 
-    color: "#cdd6f4"
+    color: CatppuccinMocha.text
     text: Qt.formatDateTime(systemClock.date, "hh:mm ap")
 
     SystemClock {

@@ -14,9 +14,9 @@ RowLayout {
         Rectangle {
             function determineColor(): string {
                 if (modelData.focused) {
-                    return "#74c7ec"
+                    return CatppuccinMocha.sapphire
                 } else {
-                    return "#cdd6f4"
+                    return CatppuccinMocha.text
                 }
             }
 

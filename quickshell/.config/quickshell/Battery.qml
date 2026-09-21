@@ -18,7 +18,7 @@ Item {
         Rectangle {
             id: tankBackground
             anchors.fill: parent
-            color: "#585b70"
+            color: CatppuccinMocha.surface2
             radius: 5
 
         } 
@@ -36,11 +36,11 @@ Item {
             width: parent.width * parent.getBattery().percentage
             height: parent.height
             anchors.left: parent.left
-            color: "#a6e3a1"
+            color: CatppuccinMocha.green
         }
 
         Text {
-            color: "#11111b"
+            color: CatppuccinMocha.crust
             font {
                 family: "0xProto Nerd Font"
                 bold: true
