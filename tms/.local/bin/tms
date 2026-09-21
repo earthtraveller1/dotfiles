@@ -1,6 +1,6 @@
 #!/bin/bash
 
-directory="$(find ~/.config ~/Projects ~/Documents ~/dotfiles -maxdepth 2 -type d | fzf)"
+directory="$(find ~/.config ~/projects ~/Documents ~/dotfiles -maxdepth 2 -type d | fzf)"
 name="$(echo "$directory" | tr '.' '_')"
 
 pgrep tmux
