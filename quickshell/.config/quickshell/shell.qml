@@ -5,6 +5,8 @@ import QtQuick
 import QtQuick.Layouts
 
 PanelWindow {
+    id: toplevelBar
+
     anchors {
         top: true
         left: true
@@ -24,7 +26,7 @@ PanelWindow {
     }
 
     Battery {
-        width: 50
+        width: 40
         height: 15
 
         anchors {
