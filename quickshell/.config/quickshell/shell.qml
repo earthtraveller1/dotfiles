@@ -25,14 +25,30 @@ PanelWindow {
         }
     }
 
-    Battery {
-        width: 40
-        height: 15
-
+    RowLayout {
         anchors {
-            verticalCenter: parent.verticalCenter
             right: parent.right
-            rightMargin: 20
+            rightMargin: 30
+            verticalCenter: parent.verticalCenter
+        }
+
+        spacing: 30
+
+        Volume {
+            anchors {
+                verticalCenter: parent.verticalCenter
+            }
+        }
+
+        Battery {
+            id: batteryModule
+
+            width: 40
+            height: 15
+
+            anchors {
+                verticalCenter: parent.verticalCenter
+            }
         }
     }
 
