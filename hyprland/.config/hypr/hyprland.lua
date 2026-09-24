@@ -18,6 +18,10 @@
 --
 
 local catppuccin_mocha = require("catppuccin-mocha")
+
+-- Local settings should provide the following
+-- scale (the scaling of the desktop)
+-- wallpaper_path
 local local_settings = require("local")
 
 ------------------
@@ -72,6 +76,11 @@ end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+
+-- For XWayland applications
+hl.env("GDK_SCALE", local_settings.scale)
+hl.env("QT_SCALE_FACTOR", local_settings.scale)
+hl.env("XCURSOR_SIZE", 16 * local_settings.scale)
 
 -----------------------
 ----- PERMISSIONS -----
@@ -144,6 +153,10 @@ hl.config({
     animations = {
         enabled = true,
     },
+
+    xwayland = {
+        force_zero_scaling = true
+    }
 })
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
