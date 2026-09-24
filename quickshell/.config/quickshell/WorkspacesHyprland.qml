@@ -9,15 +9,20 @@ RowLayout {
     spacing: 10
 
     Repeater {
-        model: Hyprland.workspaces.values
+        model: 10
 
         Rectangle {
             function determineColor(): string {
-                if (modelData.focused) {
-                    return CatppuccinMocha.sapphire
-                } else {
-                    return CatppuccinMocha.text
+                let thisWorkspace = Hyprland.workspaces.values.find(w => w.id == modelData + 1)
+                if (thisWorkspace == undefined) {
+                    return CatppuccinMocha.crust
                 }
+
+                if (thisWorkspace.active) {
+                    return CatppuccinMocha.sapphire
+                }
+
+                return CatppuccinMocha.surface1
             }
 
             Behavior on color {
