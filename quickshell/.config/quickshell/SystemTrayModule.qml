@@ -26,9 +26,7 @@ RowLayout {
                 onClicked: event => {
                     if (event.button == Qt.LeftButton) {
                         modelData.activate()
-                    } else if (event.button == Qt.RightButton) {
-
-                    }
+                    }                
                 }
             }
         }
