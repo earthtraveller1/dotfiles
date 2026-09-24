@@ -78,8 +78,8 @@ Item {
         color: "transparent"
         visible: false
 
-        width: 160
-        height: 40
+        implicitWidth: 160
+        implicitHeight: 40
 
         anchor {
             window: toplevelBar

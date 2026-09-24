@@ -32,23 +32,18 @@ PanelWindow {
             verticalCenter: parent.verticalCenter
         }
 
+        Layout.alignment: Qt.AlignVCenter
         spacing: 30
 
-        Volume {
-            anchors {
-                verticalCenter: parent.verticalCenter
-            }
-        }
+        SystemTrayModule {}
+
+        Volume {}
 
         Battery {
             id: batteryModule
 
             width: 40
             height: 15
-
-            anchors {
-                verticalCenter: parent.verticalCenter
-            }
         }
     }
 
