@@ -14,7 +14,7 @@ PanelWindow {
     }
 
     implicitHeight: 30
-    color: CatppuccinMocha.base
+    color: "#00000000"
 
     WorkspacesHyprland {
         Layout.alignment: Qt.AlignVCenter
