@@ -105,8 +105,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {catppuccin_mocha.mauve, catppuccin_mocha.mantle}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = { colors = {catppuccin_mocha.lavender, catppuccin_mocha.mantle}, angle = 45 },
+            inactive_border = catppuccin_mocha.surface0,
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -130,7 +130,7 @@ hl.config({
             enabled      = true,
             range        = 4,
             render_power = 3,
-            color        = 0x44b4befe,
+            color        = catppuccin_mocha.maroon,
         },
 
         blur = {
