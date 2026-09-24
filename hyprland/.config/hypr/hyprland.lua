@@ -40,7 +40,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "pcmanfm"
-local menu        = "hyprlauncher"
+local menu        = "wofi --show run"
 
 
 -------------------
