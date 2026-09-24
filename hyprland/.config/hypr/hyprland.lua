@@ -79,7 +79,6 @@ hl.env("HYPRCURSOR_SIZE", "24")
 
 -- For XWayland applications
 hl.env("GDK_SCALE", local_settings.scale)
-hl.env("QT_SCALE_FACTOR", local_settings.scale)
 hl.env("XCURSOR_SIZE", 16 * local_settings.scale)
 
 -----------------------
