@@ -74,10 +74,6 @@ end)
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 
--- For XWayland applications
-hl.env("GDK_SCALE", local_settings.scale)
-hl.env("XCURSOR_SIZE", 16 * local_settings.scale)
-
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
