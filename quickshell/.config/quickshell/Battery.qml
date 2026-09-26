@@ -98,14 +98,16 @@ Item {
 
             Text {
                 function formatTime(timeNumber: real): string {
-                    let hours = Math.floor(timeNumber / 3600)
-                    let minutes = Math.floor((timeNumber % 3600) / 60)
-                    let seconds = Math.floor(timeNumber % 60)
-
-                    return `${hours}:${minutes}:${seconds}`
+                    if (timeNumber > 3600) {
+                        return `${Math.round(timeNumber / 3600)} hours`
+                    } else if (timeNumber > 60) {
+                        return `${Math.floor(timeNumber / 60)} minutes`
+                    } else {
+                        return `${timeNumber} seconds`
+                    }
                 }
 
-                text: `${formatTime(batteryPill.getBattery().timeToEmpty)} until empty`
+                text: `${formatTime(batteryPill.getBattery().timeToEmpty)} left`
                 font.family: "0xProto Nerd Font"
                 anchors.centerIn: parent
             }
