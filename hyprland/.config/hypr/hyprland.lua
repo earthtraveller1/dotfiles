@@ -146,6 +146,10 @@ hl.config({
         enabled = true,
     },
 
+    misc = {
+        vrr = 1
+    },
+
     xwayland = {
         -- force_zero_scaling = true
     }
