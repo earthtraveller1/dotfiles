@@ -128,14 +128,14 @@ hl.config({
         inactive_opacity = 1.0,
 
         shadow = {
-            enabled      = true,
+            enabled      = false,
             range        = 4,
             render_power = 3,
             color        = catppuccin_mocha.maroon,
         },
 
         blur = {
-            enabled   = true,
+            enabled   = false,
             size      = 5,
             passes    = 1,
             vibrancy  = 0.1696,
