@@ -57,6 +57,8 @@ vim.lsp.enable({
     'jdtls',
     'zls',
     'hls',
+    'html',
+    'css',
     'ols',
     'ts_ls',
     'tinymist',
