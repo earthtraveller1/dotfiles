@@ -64,7 +64,7 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("wl-paste --type image --watch cliphist store")
 
     -- Sets the cursor to what I think is good
-    hl.exec_cmd("hyprctl setcursor Nordzy-catppuccin-mocha-sapphire 36")
+    hl.exec_cmd("hyprctl setcursor Nordzy-catppuccin-mocha-rosewater 36")
 end)
 
 
