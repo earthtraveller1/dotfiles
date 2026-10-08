@@ -37,6 +37,8 @@ PanelWindow {
 
         SystemTrayModule {}
 
+        Network {}
+
         Volume {}
 
         Battery {
