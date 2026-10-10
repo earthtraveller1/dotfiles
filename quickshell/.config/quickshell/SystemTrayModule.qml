@@ -13,6 +13,7 @@ RowLayout {
             implicitWidth: toplevelBar.height / 2
             implicitHeight: toplevelBar.height / 2
             color: "transparent"
+            id: thing
 
             Image {
                 source: modelData.icon
@@ -26,7 +27,12 @@ RowLayout {
                 onClicked: event => {
                     if (event.button == Qt.LeftButton) {
                         modelData.activate()
-                    }                
+                    } else if (event.button == Qt.MiddleButton) {
+                        modelData.secondaryActivate()
+                    } else if (event.button == Qt.RightButton) {
+                        let position = thing.mapToItem(null, 0, 0)
+                        modelData.display(toplevelBar, position.x, 30)
+                    }
                 }
             }
         }
