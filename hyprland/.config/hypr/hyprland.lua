@@ -62,6 +62,7 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("quickshell")
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
     hl.exec_cmd("wl-paste --type image --watch cliphist store")
+    hl.exec_cmd("gammastep -l " .. local_settings.latlong)
 
     -- Sets the cursor to what I think is good
     hl.exec_cmd("hyprctl setcursor Nordzy-catppuccin-mocha-rosewater 24")
